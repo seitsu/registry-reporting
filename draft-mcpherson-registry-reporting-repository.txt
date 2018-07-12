@@ -1,6 +1,6 @@
 Internet Engineering Task Force                             N. McPherson
 Internet-Draft                                              1&1 Internet
-Intended status: Standard Track                               T. Sattler
+Intended status: Best Current Practice                        T. Sattler
 Expires: January 11, 2019                                  July 12, 2018
 
                        Registry Reporting Repository

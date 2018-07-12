@@ -44,7 +44,7 @@ Copyright Notice
    the Trust Legal Provisions and are provided without warranty as
    described in the Simplified BSD License.
 
-McPherson, et al.       Expires January 11, 2019                [Page 1]
+McPherson & Sattler     Expires January 11, 2019                [Page 1]
 
 Internet-Draft        Registry Reporting Repository            July 2018
 
@@ -53,22 +53,25 @@ Table of Contents
      1.1.  Terminology and Definitions . . . . . . . . . . . . . . .   3
        1.1.1.  Internationalized Domain Names  . . . . . . . . . . .   3
        1.1.2.  Dates and Times . . . . . . . . . . . . . . . . . . .   3
-   2.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   3
-   3.  Security Considerations . . . . . . . . . . . . . . . . . . .   3
-   4.  Implementation Status . . . . . . . . . . . . . . . . . . . .   4
-   5.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   4
-     5.1. Normative References . . . . . . . . . . . . . . . . . . .   4
-     5.2. Informative References . . . . . . . . . . . . . . . . . .   4
+   2.  Deploying a SFTP server . . . . . . . . . . . . . . . . . . .   3
+   3.  Directory Structure . . . . . . . . . . . . . . . . . . . . .   3
+   4.  Maintenance   . . . . . . . . . . . . . . . . . . . . . . . .   3
+   5.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   4
+   6.  Security Considerations . . . . . . . . . . . . . . . . . . .   4
+   7.  Implementation Status . . . . . . . . . . . . . . . . . . . .   4
+   8.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   4
+     8.1. Normative References . . . . . . . . . . . . . . . . . . .   4
+     8.2. Informative References . . . . . . . . . . . . . . . . . .   5
    Appendix A.  Change History . . . . . . . . . . . . . . . . . . .   5
    Appendix B.  Acknowledgements . . . . . . . . . . . . . . . . . .   5
    Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   5
    
-McPherson, et al.       Expires January 11, 2019                [Page 2]
+McPherson & Sattler     Expires January 11, 2019                [Page 2]
 
 Internet-Draft        Registry Reporting Repository            July 2018
 
 1.  Introduction
-   
+
    Modern top-level domain registries provide a number of detailed
    reports and documents that their registrars require on a daily,
    weekly and monthly basis. These most commonly include transaction
@@ -79,7 +82,7 @@ Internet-Draft        Registry Reporting Repository            July 2018
    In the current set-up registrars must download these reports from
    each registry's intranet in a different manner according to each
    registry's own document management set up.
-   
+
    This document describes a standard domain Registry Reporting
    Repository used to provide reports to accredited domain registrars.
 
@@ -89,35 +92,54 @@ Internet-Draft        Registry Reporting Repository            July 2018
    "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this
    document are to be interpreted as described in [RFC2119] when
    specified in their uppercase forms.
-   
+
 1.1.1.  Internationalized Domain Names
 
    Names of affected hosts MUST be provided in Punycode according to
    [RFC5891].
-   
+
 1.1.2.  Dates and Times
 
    All dates and times attribute values MUST be expressed in Universal
    Coordinated Time (UTC) using the Gregorian calendar. The extended
    date-time form using upper case "T" and "Z" characters defined in ISO
    8601 [RFC3339] MUST be used to represent date-time values.
-   
-2.  IANA Considerations
+
+2.  Deploying a SFTP server
+
+   Each domain name registry sets up and manages a SFTP server. Every
+   SFTP server SHOULD be reachable through a generic URI, such as
+   sftp://registry.example:22
+
+   Each domain name registry SHOULD create one SFTP account for every
+   accredited domain name registrar. If a registrar owns more than one
+   registrar, then a registry MAY combine them in one account on
+   request by the parent registrar.
+
+3.  Directory Structure
+
+   TBD
+
+4.  Maintenance
+
+   TBD
+
+McPherson & Sattler     Expires January 11, 2019                [Page 3]
+
+Internet-Draft        Registry Reporting Repository            July 2018
+
+5.  IANA Considerations
 
    This document has no IANA actions.
-   
-3.  Security Considerations
+
+6.  Security Considerations
 
    The standard Registry Reporting Repository described in this document
    do not provide any security services beyond those described by SFTP.
    The security considerations described in these other specifications
    apply to this specification as well.
-   
-McPherson, et al.       Expires January 11, 2019                [Page 3]
-
-Internet-Draft        Registry Reporting Repository            July 2018
-   
-4.  Implementation Status
+
+7.  Implementation Status
 
    Note to RFC Editor: Please remove this section and the reference to
    [RFC7942] before publication.
@@ -143,43 +165,43 @@ Internet-Draft        Registry Reporting Repository            July 2018
    they see fit".
 
    Add implementation details once available.
-   
-5.  References
 
-5.1.  Normative References
+8.  References
+
+8.1.  Normative References
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119, March 1997,
               <https://www.rfc-editor.org/info/rfc2119>.
 
-5.2.  Informative References
+McPherson & Sattler     Expires January 11, 2019                [Page 4]
+
+Internet-Draft        Registry Reporting Repository            July 2018
+
+8.2.  Informative References
 
    [RFC3339]  Klyne, G., Ed. and C. Newman, "Date and Time on the
               Internet: Timestamps", RFC 3339, July 2002,
               <https://www.rfc-editor.org/info/rfc3339>.
-              
+
    [RFC5891]  Klensin, J., "Internationalized Domain Names in
               Applications (IDNA): Protocol", RFC 5891, August 2010,
               <https://www.rfc-editor.org/info/rfc5891>.
-              
+
    [RFC7942]  Sheffer, Y. and Farrel, A., "Improving Awareness of
               Running Code: The Implementation Status Section", RFC
               7942, July 2016,
               <https://www.rfc-editor.org/info/rfc7942>.
-              
-McPherson, et al.       Expires January 11, 2019                [Page 4]
-
-Internet-Draft        Registry Reporting Repository            July 2018
-   
+
 Appendix A.  Change History
 
    TBD
-   
+
 Appendix B.  Acknowledgements
 
    The authors wish to thank the following persons for their feedback
    and suggestions (sorted alphabetically by company):
-   
+
    * Thomas Keller, 1&1 Internet
    * James Galvin, Afilias
 
@@ -199,4 +221,4 @@ Authors' Addresses
    Email: tobias.sattler@me.com
    URI: https://tobiassattler.com
 
-McPherson, et al.       Expires January 11, 2019                [Page 5]
+McPherson & Sattler     Expires January 11, 2019                [Page 5]

@@ -7,11 +7,13 @@ Expires: January 11, 2019                                  July 12, 2018
              draft-mcpherson-registry-reporting-repository-00
 
 Abstract
+
    This document describes a standard domain name registry reporting
    repository used to provide reports to accredited domain name
    registrars.
 
 Status of This Memo
+
    This Internet-Draft is submitted in full conformance with the
    provisions of BCP 78 and BCP 79.
 
@@ -28,6 +30,7 @@ Status of This Memo
    This Internet-Draft will expire on January 11, 2019.
 
 Copyright Notice
+
    Copyright (c) 2018 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 

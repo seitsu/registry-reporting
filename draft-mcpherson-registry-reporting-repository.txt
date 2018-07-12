@@ -51,6 +51,8 @@ Internet-Draft        Registry Reporting Repository            July 2018
 Table of Contents
    1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   3
      1.1.  Terminology and Definitions . . . . . . . . . . . . . . .   3
+       1.1.1.  Internationalized Domain Names  . . . . . . . . . . .   3
+       1.1.2.  Dates and Times . . . . . . . . . . . . . . . . . . .   3
    2.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   3
    3.  Security Considerations . . . . . . . . . . . . . . . . . . .   3
    4.  Implementation Status . . . . . . . . . . . . . . . . . . . .   4
@@ -67,7 +69,7 @@ Internet-Draft        Registry Reporting Repository            July 2018
 
 1.  Introduction
    
-   Modern Top-Level Domain registries provide a number of detailed
+   Modern top-level domain registries provide a number of detailed
    reports and documents that their registrars require on a daily,
    weekly and monthly basis. These most commonly include transaction
    reports, as well as lists containing currently unavailable domains
@@ -78,9 +80,8 @@ Internet-Draft        Registry Reporting Repository            July 2018
    each registry's intranet in a different manner according to each
    registry's own document management set up.
    
-   This document describes a standard domain name registry reporting
-   repository used to provide reports to accredited domain name
-   registrars.
+   This document describes a standard domain Registry Reporting
+   Repository used to provide reports to accredited domain registrars.
 
 1.1.  Terminology and Definitions
 
@@ -88,6 +89,18 @@ Internet-Draft        Registry Reporting Repository            July 2018
    "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this
    document are to be interpreted as described in [RFC2119] when
    specified in their uppercase forms.
+   
+1.1.1.  Internationalized Domain Names
+
+   Names of affected hosts MUST be provided in Punycode according to
+   [RFC5891].
+   
+1.1.2.  Dates and Times
+
+   All dates and times attribute values MUST be expressed in Universal
+   Coordinated Time (UTC) using the Gregorian calendar. The extended
+   date-time form using upper case "T" and "Z" characters defined in ISO
+   8601 [RFC3339] MUST be used to represent date-time values.
    
 2.  IANA Considerations
 
@@ -141,10 +154,18 @@ Internet-Draft        Registry Reporting Repository            July 2018
 
 5.2.  Informative References
 
+   [RFC3339]  Klyne, G., Ed. and C. Newman, "Date and Time on the
+              Internet: Timestamps", RFC 3339, July 2002,
+              <https://www.rfc-editor.org/info/rfc3339>.
+              
+   [RFC5891]  Klensin, J., "Internationalized Domain Names in
+              Applications (IDNA): Protocol", RFC 5891, August 2010,
+              <https://www.rfc-editor.org/info/rfc5891>.
+              
    [RFC7942]  Sheffer, Y. and Farrel, A., "Improving Awareness of
               Running Code: The Implementation Status Section", RFC
               7942, July 2016,
-              <https://www.rfc-editor.org/info/rfc7942>
+              <https://www.rfc-editor.org/info/rfc7942>.
               
 McPherson, et al.       Expires January 11, 2019                [Page 4]
 

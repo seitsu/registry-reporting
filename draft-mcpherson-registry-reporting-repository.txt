@@ -50,18 +50,18 @@ Internet-Draft        Registry Reporting Repository            July 2018
 
 Table of Contents
    1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   3
-     1.1.  Terminology and Definitions . . . . . . . . . . . . . . .   3
-       1.1.1.  Internationalized Domain Names  . . . . . . . . . . .   3
-       1.1.2.  Dates and Times . . . . . . . . . . . . . . . . . . .   3
-   2.  Deploying a SFTP server . . . . . . . . . . . . . . . . . . .   3
-   3.  Directory Structure . . . . . . . . . . . . . . . . . . . . .   3
-   4.  Maintenance   . . . . . . . . . . . . . . . . . . . . . . . .   3
-   5.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   4
-   6.  Security Considerations . . . . . . . . . . . . . . . . . . .   4
-   7.  Implementation Status . . . . . . . . . . . . . . . . . . . .   4
-   8.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   4
-     8.1. Normative References . . . . . . . . . . . . . . . . . . .   4
-     8.2. Informative References . . . . . . . . . . . . . . . . . .   5
+   2.  Terminology and Definitions . . . . . . . . . . . . . . . . .   3
+     2.1.  Internationalized Domain Names  . . . . . . . . . . . . .   3
+     2.2.  Dates and Times . . . . . . . . . . . . . . . . . . . . .   3
+   3.  Deploying a SFTP server . . . . . . . . . . . . . . . . . . .   3
+   4.  Directory Structure . . . . . . . . . . . . . . . . . . . . .   3
+   5.  Maintenance   . . . . . . . . . . . . . . . . . . . . . . . .   3
+   6.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   4
+   7.  Security Considerations . . . . . . . . . . . . . . . . . . .   4
+   8.  Implementation Status . . . . . . . . . . . . . . . . . . . .   4
+   9.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   4
+     9.1. Normative References . . . . . . . . . . . . . . . . . . .   4
+     9.2. Informative References . . . . . . . . . . . . . . . . . .   5
    Appendix A.  Change History . . . . . . . . . . . . . . . . . . .   5
    Appendix B.  Acknowledgements . . . . . . . . . . . . . . . . . .   5
    Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   5
@@ -86,26 +86,26 @@ Internet-Draft        Registry Reporting Repository            July 2018
    This document describes a standard domain Registry Reporting
    Repository used to provide reports to accredited domain registrars.
 
-1.1.  Terminology and Definitions
+2.  Terminology and Definitions
 
    The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
    "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this
    document are to be interpreted as described in [RFC2119] when
    specified in their uppercase forms.
 
-1.1.1.  Internationalized Domain Names
+2.1.  Internationalized Domain Names
 
    Names of affected hosts MUST be provided in Punycode according to
    [RFC5891].
 
-1.1.2.  Dates and Times
+2.2.  Dates and Times
 
    All dates and times attribute values MUST be expressed in Universal
    Coordinated Time (UTC) using the Gregorian calendar. The extended
    date-time form using upper case "T" and "Z" characters defined in ISO
    8601 [RFC3339] MUST be used to represent date-time values.
 
-2.  Deploying a SFTP server
+3.  Deploying a SFTP server
 
    Each domain name registry sets up and manages a SFTP server. Every
    SFTP server SHOULD be reachable through a generic URI, such as
@@ -116,11 +116,11 @@ Internet-Draft        Registry Reporting Repository            July 2018
    registrar, then a registry MAY combine them in one account on
    request by the parent registrar.
 
-3.  Directory Structure
+4.  Directory Structure
 
    TBD
 
-4.  Maintenance
+5.  Maintenance
 
    TBD
 
@@ -128,18 +128,18 @@ McPherson & Sattler     Expires January 11, 2019                [Page 3]
 
 Internet-Draft        Registry Reporting Repository            July 2018
 
-5.  IANA Considerations
+6.  IANA Considerations
 
    This document has no IANA actions.
 
-6.  Security Considerations
+7.  Security Considerations
 
    The standard Registry Reporting Repository described in this document
    do not provide any security services beyond those described by SFTP.
    The security considerations described in these other specifications
    apply to this specification as well.
 
-7.  Implementation Status
+8.  Implementation Status
 
    Note to RFC Editor: Please remove this section and the reference to
    [RFC7942] before publication.
@@ -166,9 +166,9 @@ Internet-Draft        Registry Reporting Repository            July 2018
 
    Add implementation details once available.
 
-8.  References
+9.  References
 
-8.1.  Normative References
+9.1.  Normative References
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119, March 1997,
@@ -178,7 +178,7 @@ McPherson & Sattler     Expires January 11, 2019                [Page 4]
 
 Internet-Draft        Registry Reporting Repository            July 2018
 
-8.2.  Informative References
+9.2.  Informative References
 
    [RFC3339]  Klyne, G., Ed. and C. Newman, "Date and Time on the
               Internet: Timestamps", RFC 3339, July 2002,

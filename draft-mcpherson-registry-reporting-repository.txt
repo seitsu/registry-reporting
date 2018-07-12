@@ -88,16 +88,6 @@ Internet-Draft        Registry Reporting Repository            July 2018
    "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this
    document are to be interpreted as described in [RFC2119] when
    specified in their uppercase forms.
-
-   XML is case sensitive. Unless stated otherwise, XML specifications
-   and examples provided in this document MUST be interpreted in the
-   character case presented in order to develop a conforming
-   implementation.
-
-   In examples, "C:" represents lines sent by a protocol client and
-   "S:" represents lines returned by a protocol server. Indentation and
-   white space in examples are provided only to illustrate element
-   relationships and are not a REQUIRED feature of this protocol.
    
 2.  IANA Considerations
 
@@ -166,7 +156,11 @@ Appendix A.  Change History
    
 Appendix B.  Acknowledgements
 
-   TBD
+   The authors wish to thank the following persons for their feedback
+   and suggestions (sorted alphabetically by company):
+   
+   * Thomas Keller, 1&1 Internet
+   * James Galvin, Afilias
 
 Authors' Addresses
 

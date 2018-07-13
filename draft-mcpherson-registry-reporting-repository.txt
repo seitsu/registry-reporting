@@ -50,15 +50,16 @@ Internet-Draft        Registry Reporting Repository            July 2018
 Table of Contents
    1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   3
    2.  Terminology and Definitions . . . . . . . . . . . . . . . . .   3
-   3.  Deploying a SFTP server . . . . . . . . . . . . . . . . . . .   3
-   4.  SFTP Directory Structure . . . .. . . . . . . . . . . . . . .   4
-   5.  SFTP Server Maintenance   . . . . . . . . . . . . . . . . . .   4
-   6.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   4
-   7.  Security Considerations . . . . . . . . . . . . . . . . . . .   4
-   8.  Implementation Status . . . . . . . . . . . . . . . . . . . .   5
-   9.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   5
-     9.1. Normative References . . . . . . . . . . . . . . . . . . .   5
-     9.2. Informative References . . . . . . . . . . . . . . . . . .   6
+   3.  Deploying a SFTP Server . . . . . . . . . . . . . . . . . . .   3
+   4.  SFTP Account  . . . . . . . . . . . . . . . . . . . . . . . .   3
+   5.  SFTP Directory Structure . . . .. . . . . . . . . . . . . . .   4
+   6.  SFTP Server Maintenance   . . . . . . . . . . . . . . . . . .   4
+   7.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   4
+   8.  Security Considerations . . . . . . . . . . . . . . . . . . .   4
+   9.  Implementation Status . . . . . . . . . . . . . . . . . . . .   5
+   10. References  . . . . . . . . . . . . . . . . . . . . . . . . .   5
+     10.1.  Normative References . . . . . . . . . . . . . . . . . .   5
+     10.2.  Informative References . . . . . . . . . . . . . . . . .   6
    Appendix A.  Change History . . . . . . . . . . . . . . . . . . .   6
    Appendix B.  Acknowledgements . . . . . . . . . . . . . . . . . .   6
    Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   6
@@ -90,23 +91,28 @@ Internet-Draft        Registry Reporting Repository            July 2018
    document are to be interpreted as described in [RFC2119] when
    specified in their uppercase forms.
 
-3.  Deploying a SFTP server
+3.  Deploying a SFTP Server
 
    Each domain name registry sets up and manages a SFTP
    (https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol) server.
    Every SFTP server MUST be reachable through a generic URI, such as
    sftp://registry.example, and MUST listen on port 22.
+   
+4.  SFTP Account
 
    Each domain name registry MUST create one SFTP account for every
    accredited domain name registrar. If a registrar owns more than one
    registrar, then a registry SHOULD combine them in one account on
    request by the parent registrar.
+   
+   The authentication for a SFTP account should be done with an
+   username and key instead of a password.
 
 McPherson & Sattler     Expires January 22, 2019                [Page 3]
 
 Internet-Draft        Registry Reporting Repository            July 2018
 
-4.  SFTP Directory Structure
+5.  SFTP Directory Structure
 
    The home directory of a SFTP user SHOULD be its root. This can be
    achieved with e.g. chroot (https://en.wikipedia.org/wiki/Chroot) and
@@ -126,7 +132,7 @@ Internet-Draft        Registry Reporting Repository            July 2018
    MM    stands for the months in which the file was created according
          ISO 8601 [RFC3339]
 
-5.  SFTP Server Maintenance
+6.  SFTP Server Maintenance
 
    Maintenance is important and necessary, especially to keep the SFTP
    server up to date and secure. It MUST be announced in advance. In
@@ -135,11 +141,11 @@ Internet-Draft        Registry Reporting Repository            July 2018
    is RECOMMENDED to use. The notification notice MUST be send at
    least 7 days in advance.
 
-6.  IANA Considerations
+7.  IANA Considerations
 
    This document has no IANA actions.
 
-7.  Security Considerations
+8.  Security Considerations
 
    The registry reporting repository described in this document do not
    provide any security services beyond those described by SFTP. The
@@ -150,7 +156,7 @@ McPherson & Sattler     Expires January 22, 2019                [Page 4]
 
 Internet-Draft        Registry Reporting Repository            July 2018
 
-8.  Implementation Status
+9.  Implementation Status
 
    Note to RFC Editor: Please remove this section and the reference to
    [RFC7942] before publication.
@@ -177,9 +183,9 @@ Internet-Draft        Registry Reporting Repository            July 2018
 
    Add implementation details once available.
 
-9.  References
+10.  References
 
-9.1.  Normative References
+10.1.  Normative References
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119, March 1997,
@@ -189,7 +195,7 @@ McPherson & Sattler     Expires January 22, 2019                [Page 5]
 
 Internet-Draft        Registry Reporting Repository            July 2018
 
-9.2.  Informative References
+10.2.  Informative References
 
    [I-D.sattler-epp-registry-maintenance]
               Sattler, T., "Registry Maintenance Notifications for the

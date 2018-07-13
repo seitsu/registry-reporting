@@ -50,8 +50,6 @@ Internet-Draft        Registry Reporting Repository            July 2018
 Table of Contents
    1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   3
    2.  Terminology and Definitions . . . . . . . . . . . . . . . . .   3
-     2.1.  Internationalized Domain Names  . . . . . . . . . . . . .   3
-     2.2.  Dates and Times . . . . . . . . . . . . . . . . . . . . .   3
    3.  Deploying a SFTP server . . . . . . . . . . . . . . . . . . .   3
    4.  Directory Structure . . . . . . . . . . . . . . . . . . . . .   4
    5.  Maintenance   . . . . . . . . . . . . . . . . . . . . . . . .   4
@@ -92,22 +90,10 @@ Internet-Draft        Registry Reporting Repository            July 2018
    document are to be interpreted as described in [RFC2119] when
    specified in their uppercase forms.
 
-2.1.  Internationalized Domain Names
-
-   Names of affected hosts MUST be provided in Punycode according to
-   [RFC5891].
-
-2.2.  Dates and Times
-
-   All dates and times attribute values MUST be expressed in Universal
-   Coordinated Time (UTC) using the Gregorian calendar. The extended
-   date-time form using upper case "T" and "Z" characters defined in ISO
-   8601 [RFC3339] MUST be used to represent date-time values.
-
 3.  Deploying a SFTP server
 
    Each domain name registry sets up and manages a SFTP
-   [I.D.ietf-secsh-filexfer] server. Every SFTP server MUST be
+   [I-D.ietf-secsh-filexfer] server. Every SFTP server MUST be
    reachable through a generic URI, such as sftp://registry.example, and
    MUST run on port 22.
 
@@ -146,7 +132,7 @@ Internet-Draft        Registry Reporting Repository            July 2018
    server up to date and secure. It MUST be announced in advance. In
    this case the EPP Registry Maintenance Specification
    [I-D.sattler-epp-registry-maintenance] is the right choice and it
-   is RECOMMENDED to use. The notification notice SHOULD be send at
+   is RECOMMENDED to use. The notification notice MUST be send at
    least 7 days in advance.
 
 6.  IANA Considerations
@@ -221,10 +207,6 @@ Internet-Draft        Registry Reporting Repository            July 2018
    [RFC3339]  Klyne, G., Ed. and C. Newman, "Date and Time on the
               Internet: Timestamps", RFC 3339, July 2002,
               <https://www.rfc-editor.org/info/rfc3339>.
-
-   [RFC5891]  Klensin, J., "Internationalized Domain Names in
-              Applications (IDNA): Protocol", RFC 5891, August 2010,
-              <https://www.rfc-editor.org/info/rfc5891>.
 
    [RFC7942]  Sheffer, Y. and Farrel, A., "Improving Awareness of
               Running Code: The Implementation Status Section", RFC

@@ -51,8 +51,8 @@ Table of Contents
    1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   3
    2.  Terminology and Definitions . . . . . . . . . . . . . . . . .   3
    3.  Deploying a SFTP server . . . . . . . . . . . . . . . . . . .   3
-   4.  Directory Structure . . . . . . . . . . . . . . . . . . . . .   4
-   5.  Maintenance   . . . . . . . . . . . . . . . . . . . . . . . .   4
+   4.  SFTP Directory Structure . . . .. . . . . . . . . . . . . . .   4
+   5.  SFTP Server Maintenance   . . . . . . . . . . . . . . . . . .   4
    6.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   4
    7.  Security Considerations . . . . . . . . . . . . . . . . . . .   4
    8.  Implementation Status . . . . . . . . . . . . . . . . . . . .   5
@@ -106,7 +106,7 @@ McPherson & Sattler     Expires January 11, 2019                [Page 3]
 
 Internet-Draft        Registry Reporting Repository            July 2018
 
-4.  Directory Structure
+4.  SFTP Directory Structure
 
    The home directory of a SFTP user SHOULD be its root. This can be
    achieved with e.g. chroot (https://en.wikipedia.org/wiki/Chroot) and
@@ -126,7 +126,7 @@ Internet-Draft        Registry Reporting Repository            July 2018
    MM    stands for the months in which the file was created according
          ISO 8601 [RFC3339]
 
-5.  Maintenance
+5.  SFTP Server Maintenance
 
    Maintenance is important and necessary, especially to keep the SFTP
    server up to date and secure. It MUST be announced in advance. In

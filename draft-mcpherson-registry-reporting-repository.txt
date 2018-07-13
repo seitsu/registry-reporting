@@ -130,8 +130,9 @@ Internet-Draft        Registry Reporting Repository            July 2018
    Maintenance is important and necessary, especially to keep the SFTP
    server up to date and secure. It MUST be announced in advance. In
    this case the EPP Registry Maintenance Specification
-   [draft-sattler-epp-registry-maintenance] is the right choice. The
-   notification notice SHOULD be send at least 7 days in advance.
+   [draft-sattler-epp-registry-maintenance] is the right choice and it
+   is RECOMMENDED to use. The notification notice SHOULD be send at
+   least 7 days in advance.
 
 6.  IANA Considerations
 

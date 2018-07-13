@@ -50,7 +50,7 @@ Internet-Draft        Registry Reporting Repository            July 2018
 Table of Contents
    1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   3
    2.  Terminology and Definitions . . . . . . . . . . . . . . . . .   3
-   3.  Deploying a SFTP Server . . . . . . . . . . . . . . . . . . .   3
+   3.  SFTP Server . . . . . . . . . . . . . . . . . . . . . . . . .   3
    4.  SFTP Account  . . . . . . . . . . . . . . . . . . . . . . . .   3
    5.  SFTP Directory Structure . . . .. . . . . . . . . . . . . . .   4
    6.  SFTP Server Maintenance   . . . . . . . . . . . . . . . . . .   4
@@ -91,20 +91,20 @@ Internet-Draft        Registry Reporting Repository            July 2018
    document are to be interpreted as described in [RFC2119] when
    specified in their uppercase forms.
 
-3.  Deploying a SFTP Server
+3.  SFTP Server
 
    Each domain name registry sets up and manages a SFTP
    (https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol) server.
    Every SFTP server MUST be reachable through a generic URI, such as
    sftp://registry.example, and MUST listen on port 22.
-   
+
 4.  SFTP Account
 
    Each domain name registry MUST create one SFTP account for every
    accredited domain name registrar. If a registrar owns more than one
    registrar, then a registry SHOULD combine them in one account on
    request by the parent registrar.
-   
+
    The authentication for a SFTP account should be done with an
    username and key instead of a password.
 

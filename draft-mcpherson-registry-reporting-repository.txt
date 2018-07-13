@@ -1,7 +1,7 @@
 Internet Engineering Task Force                             N. McPherson
 Internet-Draft                                              1&1 Internet
 Intended status: Best Current Practice                        T. Sattler
-Expires: January 11, 2019                                  July 12, 2018
+Expires: January 22, 2019                                  July 23, 2018
 
                        Registry Reporting Repository
              draft-mcpherson-registry-reporting-repository-00
@@ -26,7 +26,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress".
 
-   This Internet-Draft will expire on January 11, 2019.
+   This Internet-Draft will expire on January 22, 2019.
 
 Copyright Notice
 
@@ -43,7 +43,7 @@ Copyright Notice
    the Trust Legal Provisions and are provided without warranty as
    described in the Simplified BSD License.
 
-McPherson & Sattler     Expires January 11, 2019                [Page 1]
+McPherson & Sattler     Expires January 22, 2019                [Page 1]
 
 Internet-Draft        Registry Reporting Repository            July 2018
 
@@ -62,8 +62,8 @@ Table of Contents
    Appendix A.  Change History . . . . . . . . . . . . . . . . . . .   6
    Appendix B.  Acknowledgements . . . . . . . . . . . . . . . . . .   6
    Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   6
-   
-McPherson & Sattler     Expires January 11, 2019                [Page 2]
+
+McPherson & Sattler     Expires January 22, 2019                [Page 2]
 
 Internet-Draft        Registry Reporting Repository            July 2018
 
@@ -101,8 +101,8 @@ Internet-Draft        Registry Reporting Repository            July 2018
    accredited domain name registrar. If a registrar owns more than one
    registrar, then a registry SHOULD combine them in one account on
    request by the parent registrar.
-   
-McPherson & Sattler     Expires January 11, 2019                [Page 3]
+
+McPherson & Sattler     Expires January 22, 2019                [Page 3]
 
 Internet-Draft        Registry Reporting Repository            July 2018
 
@@ -146,7 +146,7 @@ Internet-Draft        Registry Reporting Repository            July 2018
    security considerations described in these other specifications apply
    to this specification as well.
 
-McPherson & Sattler     Expires January 11, 2019                [Page 4]
+McPherson & Sattler     Expires January 22, 2019                [Page 4]
 
 Internet-Draft        Registry Reporting Repository            July 2018
 
@@ -185,7 +185,7 @@ Internet-Draft        Registry Reporting Repository            July 2018
               Requirement Levels", BCP 14, RFC 2119, March 1997,
               <https://www.rfc-editor.org/info/rfc2119>.
 
-McPherson & Sattler     Expires January 11, 2019                [Page 5]
+McPherson & Sattler     Expires January 22, 2019                [Page 5]
 
 Internet-Draft        Registry Reporting Repository            July 2018
 
@@ -235,4 +235,4 @@ Authors' Addresses
    Email: tobias.sattler@me.com
    URI:   https://tobiassattler.com
 
-McPherson & Sattler     Expires January 11, 2019                [Page 6]
+McPherson & Sattler     Expires January 22, 2019                [Page 6]

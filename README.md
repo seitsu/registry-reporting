@@ -1,4 +1,4 @@
-## Standard Registry Reporting Repository
+## Registry Reporting Repository
 
 ### Goal
 The goal is to draft a new standard on a Registry Reporting Repository and to submit an IETF best practice draft that hopefully result in a [RFC].

@@ -107,9 +107,10 @@ Internet-Draft        Registry Reporting Repository            July 2018
 
 3.  Deploying a SFTP server
 
-   Each domain name registry sets up and manages a SFTP server. Every
-   SFTP server SHOULD be reachable through a generic URI, such as
-   sftp://registry.example:22
+   Each domain name registry sets up and manages a SFTP
+   [draft-ietf-secsh-filexfer] server. Every SFTP server SHOULD be
+   reachable through a generic URI, such as sftp://registry.example, and
+   SHOULD run on port 22.
 
    Each domain name registry SHOULD create one SFTP account for every
    accredited domain name registrar. If a registrar owns more than one
@@ -169,6 +170,12 @@ Internet-Draft        Registry Reporting Repository            July 2018
 9.  References
 
 9.1.  Normative References
+
+   [draft-ietf-secsh-filexfer]
+              Galbraith, J. and Saarenmaa O., "SSH File Transfer
+              Protocol",
+              <https://tools.ietf.org/html/draft-ietf-secsh-filexfer-13>
+              (expired), July 2016
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119, March 1997,

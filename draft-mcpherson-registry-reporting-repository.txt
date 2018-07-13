@@ -8,9 +8,8 @@ Expires: January 11, 2019                                  July 12, 2018
 
 Abstract
 
-   This document describes a standard domain name registry reporting
-   repository used to provide reports to accredited domain name
-   registrars.
+   This document describes a domain name registry reporting repository
+   used to provide reports to accredited domain name registrars.
 
 Status of This Memo
 
@@ -83,8 +82,8 @@ Internet-Draft        Registry Reporting Repository            July 2018
    each registry's intranet in a different manner according to each
    registry's own document management set up.
 
-   This document describes a standard domain Registry Reporting
-   Repository used to provide reports to accredited domain registrars.
+   This document describes a domain registry reporting repository used
+   to provide reports to accredited domain registrars.
 
 2.  Terminology and Definitions
 
@@ -124,9 +123,9 @@ Internet-Draft        Registry Reporting Repository            July 2018
 4.  Directory Structure
 
    The home directory of a SFTP user SHOULD be its root. This can be
-   achieved with chroot and prevents that a SFTP user can access other
-   directories that are not own by himself. All directories MUST be
-   lowercase.
+   achieved with e.g. chroot (https://en.wikipedia.org/wiki/Chroot) and
+   prevents that a SFTP user can access other directories that are not
+   own by himself. All directories MUST be lowercase.
 
    Files in these directories MUST be stored in an appropriate
    subdirectory according to their creation date.
@@ -156,11 +155,11 @@ Internet-Draft        Registry Reporting Repository            July 2018
 
 7.  Security Considerations
 
-   The standard Registry Reporting Repository described in this document
-   do not provide any security services beyond those described by SFTP.
-   The security considerations described in these other specifications
-   apply to this specification as well.
-   
+   The registry reporting repository described in this document do not
+   provide any security services beyond those described by SFTP. The
+   security considerations described in these other specifications apply
+   to this specification as well.
+
 McPherson & Sattler     Expires January 11, 2019                [Page 4]
 
 Internet-Draft        Registry Reporting Repository            July 2018

@@ -55,16 +55,16 @@ Table of Contents
      2.2.  Dates and Times . . . . . . . . . . . . . . . . . . . . .   3
    3.  Deploying a SFTP server . . . . . . . . . . . . . . . . . . .   3
    4.  Directory Structure . . . . . . . . . . . . . . . . . . . . .   3
-   5.  Maintenance   . . . . . . . . . . . . . . . . . . . . . . . .   3
+   5.  Maintenance   . . . . . . . . . . . . . . . . . . . . . . . .   4
    6.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   4
    7.  Security Considerations . . . . . . . . . . . . . . . . . . .   4
    8.  Implementation Status . . . . . . . . . . . . . . . . . . . .   4
-   9.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   4
-     9.1. Normative References . . . . . . . . . . . . . . . . . . .   4
+   9.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   5
+     9.1. Normative References . . . . . . . . . . . . . . . . . . .   5
      9.2. Informative References . . . . . . . . . . . . . . . . . .   5
-   Appendix A.  Change History . . . . . . . . . . . . . . . . . . .   5
-   Appendix B.  Acknowledgements . . . . . . . . . . . . . . . . . .   5
-   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   5
+   Appendix A.  Change History . . . . . . . . . . . . . . . . . . .   6
+   Appendix B.  Acknowledgements . . . . . . . . . . . . . . . . . .   6
+   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   6
    
 McPherson & Sattler     Expires January 11, 2019                [Page 2]
 
@@ -108,26 +108,30 @@ Internet-Draft        Registry Reporting Repository            July 2018
 3.  Deploying a SFTP server
 
    Each domain name registry sets up and manages a SFTP
-   [draft-ietf-secsh-filexfer] server. Every SFTP server SHOULD be
+   [draft-ietf-secsh-filexfer] server. Every SFTP server MUST be
    reachable through a generic URI, such as sftp://registry.example, and
-   SHOULD run on port 22.
+   MUST run on port 22.
 
-   Each domain name registry SHOULD create one SFTP account for every
+   Each domain name registry MUST create one SFTP account for every
    accredited domain name registrar. If a registrar owns more than one
-   registrar, then a registry MAY combine them in one account on
+   registrar, then a registry SHOULD combine them in one account on
    request by the parent registrar.
 
 4.  Directory Structure
 
    TBD
-
-5.  Maintenance
-
-   TBD
-
+   
 McPherson & Sattler     Expires January 11, 2019                [Page 3]
 
 Internet-Draft        Registry Reporting Repository            July 2018
+
+5.  Maintenance
+
+   Maintenance is important and necessary, especially to keep the SFTP
+   server up to date and secure. It MUST be announced in advance. In
+   this case the EPP Registry Maintenance Specification
+   [draft-sattler-epp-registry-maintenance] is the right choice. The
+   notification notice SHOULD be send at least 7 days in advance.
 
 6.  IANA Considerations
 
@@ -166,6 +170,10 @@ Internet-Draft        Registry Reporting Repository            July 2018
    they see fit".
 
    Add implementation details once available.
+   
+McPherson & Sattler     Expires January 11, 2019                [Page 4]
+
+Internet-Draft        Registry Reporting Repository            July 2018
 
 9.  References
 
@@ -181,11 +189,14 @@ Internet-Draft        Registry Reporting Repository            July 2018
               Requirement Levels", BCP 14, RFC 2119, March 1997,
               <https://www.rfc-editor.org/info/rfc2119>.
 
-McPherson & Sattler     Expires January 11, 2019                [Page 4]
-
-Internet-Draft        Registry Reporting Repository            July 2018
-
 9.2.  Informative References
+
+   [draft-sattler-epp-registry-maintenance]
+              Sattler, T., "Registry Maintenance Notifications for the
+              Extensible Provisioning Protocol (EPP)",
+              <https://tools.ietf.org/html/draft-sattler-epp-registry-
+              maintenance>
+              (work in progress), March 2018
 
    [RFC3339]  Klyne, G., Ed. and C. Newman, "Date and Time on the
               Internet: Timestamps", RFC 3339, July 2002,
@@ -199,6 +210,10 @@ Internet-Draft        Registry Reporting Repository            July 2018
               Running Code: The Implementation Status Section", RFC
               7942, July 2016,
               <https://www.rfc-editor.org/info/rfc7942>.
+              
+McPherson & Sattler     Expires January 11, 2019                [Page 5]
+
+Internet-Draft        Registry Reporting Repository            July 2018
 
 Appendix A.  Change History
 
@@ -228,4 +243,4 @@ Authors' Addresses
    Email: tobias.sattler@me.com
    URI: https://tobiassattler.com
 
-McPherson & Sattler     Expires January 11, 2019                [Page 5]
+McPherson & Sattler     Expires January 11, 2019                [Page 6]

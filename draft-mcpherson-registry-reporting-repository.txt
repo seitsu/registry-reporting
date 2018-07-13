@@ -54,14 +54,14 @@ Table of Contents
      2.1.  Internationalized Domain Names  . . . . . . . . . . . . .   3
      2.2.  Dates and Times . . . . . . . . . . . . . . . . . . . . .   3
    3.  Deploying a SFTP server . . . . . . . . . . . . . . . . . . .   3
-   4.  Directory Structure . . . . . . . . . . . . . . . . . . . . .   3
+   4.  Directory Structure . . . . . . . . . . . . . . . . . . . . .   4
    5.  Maintenance   . . . . . . . . . . . . . . . . . . . . . . . .   4
    6.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   4
    7.  Security Considerations . . . . . . . . . . . . . . . . . . .   4
-   8.  Implementation Status . . . . . . . . . . . . . . . . . . . .   4
+   8.  Implementation Status . . . . . . . . . . . . . . . . . . . .   5
    9.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   5
      9.1. Normative References . . . . . . . . . . . . . . . . . . .   5
-     9.2. Informative References . . . . . . . . . . . . . . . . . .   5
+     9.2. Informative References . . . . . . . . . . . . . . . . . .   6
    Appendix A.  Change History . . . . . . . . . . . . . . . . . . .   6
    Appendix B.  Acknowledgements . . . . . . . . . . . . . . . . . .   6
    Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   6
@@ -116,14 +116,30 @@ Internet-Draft        Registry Reporting Repository            July 2018
    accredited domain name registrar. If a registrar owns more than one
    registrar, then a registry SHOULD combine them in one account on
    request by the parent registrar.
-
-4.  Directory Structure
-
-   TBD
    
 McPherson & Sattler     Expires January 11, 2019                [Page 3]
 
 Internet-Draft        Registry Reporting Repository            July 2018
+
+4.  Directory Structure
+
+   The home directory of a SFTP user SHOULD be its root. This can be
+   achieved with chroot and prevents that a SFTP user can access other
+   directories that are not own by himself. All directories MUST be
+   lowercase.
+
+   Files in these directories MUST be stored in an appropriate
+   subdirectory according to their creation date.
+
+   /YYYY-MM/foo.example
+   /YYYY-MM/domains/foo.example
+   /YYYY-MM/foo/bar/example
+
+   YYYY  stands for the year in which the file was created according
+         ISO 8601 [RFC3339]
+
+   MM    stands for the months in which the file was created according
+         ISO 8601 [RFC3339]
 
 5.  Maintenance
 
@@ -144,6 +160,10 @@ Internet-Draft        Registry Reporting Repository            July 2018
    do not provide any security services beyond those described by SFTP.
    The security considerations described in these other specifications
    apply to this specification as well.
+   
+McPherson & Sattler     Expires January 11, 2019                [Page 4]
+
+Internet-Draft        Registry Reporting Repository            July 2018
 
 8.  Implementation Status
 
@@ -171,10 +191,6 @@ Internet-Draft        Registry Reporting Repository            July 2018
    they see fit".
 
    Add implementation details once available.
-   
-McPherson & Sattler     Expires January 11, 2019                [Page 4]
-
-Internet-Draft        Registry Reporting Repository            July 2018
 
 9.  References
 
@@ -189,6 +205,10 @@ Internet-Draft        Registry Reporting Repository            July 2018
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119, March 1997,
               <https://www.rfc-editor.org/info/rfc2119>.
+
+McPherson & Sattler     Expires January 11, 2019                [Page 5]
+
+Internet-Draft        Registry Reporting Repository            July 2018
 
 9.2.  Informative References
 
@@ -211,10 +231,6 @@ Internet-Draft        Registry Reporting Repository            July 2018
               Running Code: The Implementation Status Section", RFC
               7942, July 2016,
               <https://www.rfc-editor.org/info/rfc7942>.
-              
-McPherson & Sattler     Expires January 11, 2019                [Page 5]
-
-Internet-Draft        Registry Reporting Repository            July 2018
 
 Appendix A.  Change History
 

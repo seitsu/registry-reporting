@@ -97,13 +97,15 @@ Internet-Draft        Registry Reporting Repository            July 2018
    (https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol) server.
    Every SFTP server MUST be reachable through a generic URI, such as
    sftp://registry.example, and MUST listen on port 22.
+   
+   IP whitelisting to reach this SFTP server is RECOMMENDED.
 
 4.  SFTP Account
 
    Each domain name registry MUST create one SFTP account for every
    accredited domain name registrar. If a registrar owns more than one
    registrar, then a registry SHOULD combine them in one account on
-   request by the parent registrar.
+   request by the parent registrar or entity.
 
    The authentication for a SFTP account should be done with an
    username and key instead of a password.
@@ -117,7 +119,7 @@ Internet-Draft        Registry Reporting Repository            July 2018
    The home directory of a SFTP user SHOULD be its root. This can be
    achieved with e.g. chroot (https://en.wikipedia.org/wiki/Chroot) and
    prevents that a SFTP user can access other directories that are not
-   own by himself. All directories MUST be lowercase.
+   owned by themselves. All directories MUST be lowercase.
 
    Files in these directories MUST be stored in an appropriate
    subdirectory according to their creation date.
@@ -202,7 +204,7 @@ Internet-Draft        Registry Reporting Repository            July 2018
               Extensible Provisioning Protocol (EPP)",
               <https://tools.ietf.org/html/draft-sattler-epp-registry-
               maintenance>
-              (work in progress), March 2018
+              (work in progress), July 2018
 
    [RFC3339]  Klyne, G., Ed. and C. Newman, "Date and Time on the
               Internet: Timestamps", RFC 3339, July 2002,
@@ -224,6 +226,7 @@ Appendix B.  Acknowledgements
 
    * Thomas Keller, 1&1 Internet
    * James Galvin, Afilias
+   * Andreas Huber, united-domains
 
 Authors' Addresses
 

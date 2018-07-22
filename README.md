@@ -17,4 +17,4 @@ This is free and unencumbered software released into the public domain. For more
 [RrSG]: http://icannregistrars.org
 [TechOps]: http://icannregistrars.org/techops-sub-committee/
 [LICENSE]: /LICENSE
-[draft-mcpherson-registry-reporting-repository]: /draft-mcpherson-sattler-registry-reporting-repository.txt
+[draft-mcpherson-sattler-registry-reporting-repository]: /draft-mcpherson-sattler-registry-reporting-repository.txt

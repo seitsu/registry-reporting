@@ -4,7 +4,7 @@ Intended status: Best Current Practice                        T. Sattler
 Expires: January 22, 2019                                  July 23, 2018
 
                        Registry Reporting Repository
-             draft-mcpherson-registry-reporting-repository-00
+        draft-mcpherson-sattler-registry-reporting-repository-00
 
 Abstract
 

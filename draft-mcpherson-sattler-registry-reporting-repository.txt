@@ -1,7 +1,7 @@
 Internet Engineering Task Force                             N. McPherson
 Internet-Draft                                              1&1 Internet
 Intended status: Best Current Practice                        T. Sattler
-Expires: January 22, 2019                                  July 23, 2018
+Expires: January 24, 2019                                  July 25, 2018
 
                        Registry Reporting Repository
         draft-mcpherson-sattler-registry-reporting-repository-00
@@ -26,7 +26,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress".
 
-   This Internet-Draft will expire on January 22, 2019.
+   This Internet-Draft will expire on January 24, 2019.
 
 Copyright Notice
 
@@ -43,7 +43,7 @@ Copyright Notice
    the Trust Legal Provisions and are provided without warranty as
    described in the Simplified BSD License.
 
-McPherson & Sattler     Expires January 22, 2019                [Page 1]
+McPherson & Sattler     Expires January 24, 2019                [Page 1]
 
 Internet-Draft        Registry Reporting Repository            July 2018
 
@@ -64,7 +64,7 @@ Table of Contents
    Appendix B.  Acknowledgements . . . . . . . . . . . . . . . . . .   6
    Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   6
 
-McPherson & Sattler     Expires January 22, 2019                [Page 2]
+McPherson & Sattler     Expires January 24, 2019                [Page 2]
 
 Internet-Draft        Registry Reporting Repository            July 2018
 
@@ -110,13 +110,13 @@ Internet-Draft        Registry Reporting Repository            July 2018
    The authentication for a SFTP account should be done with an
    username and key instead of a password.
 
-McPherson & Sattler     Expires January 22, 2019                [Page 3]
+McPherson & Sattler     Expires January 24, 2019                [Page 3]
 
 Internet-Draft        Registry Reporting Repository            July 2018
 
 5.  SFTP Directory Structure
 
-   The home directory of a SFTP user SHOULD be its root. This can be
+   The home directory of a SFTP user MUST be its root. This can be
    achieved with e.g. chroot (https://en.wikipedia.org/wiki/Chroot) and
    prevents that a SFTP user can access other directories that are not
    owned by themselves. All directories MUST be lowercase.
@@ -128,20 +128,19 @@ Internet-Draft        Registry Reporting Repository            July 2018
    /YYYY-MM/domains/foo.example
    /YYYY-MM/foo/bar/example
 
-   YYYY  stands for the year in which the file was created according
-         ISO 8601 [RFC3339]
+   YYYY  represents the year in which the file was created, format
+         according to ISO 8601 [RFC3339]
 
-   MM    stands for the months in which the file was created according
-         ISO 8601 [RFC3339]
+   MM    represents the months in which the file was created, format
+         according to ISO 8601 [RFC3339]
 
 6.  SFTP Server Maintenance
 
    Maintenance is important and necessary, especially to keep the SFTP
    server up to date and secure. It MUST be announced in advance. In
    this case the EPP Registry Maintenance Specification
-   [I-D.sattler-epp-registry-maintenance] is the right choice and it
-   is RECOMMENDED to use. The notification notice MUST be send at
-   least 7 days in advance.
+   [I-D.sattler-epp-registry-maintenance] is RECOMMENDED to use. The
+   notification notice MUST be send at least 7 days in advance.
 
 7.  IANA Considerations
 
@@ -154,7 +153,7 @@ Internet-Draft        Registry Reporting Repository            July 2018
    security considerations described in these other specifications apply
    to this specification as well.
 
-McPherson & Sattler     Expires January 22, 2019                [Page 4]
+McPherson & Sattler     Expires January 24, 2019                [Page 4]
 
 Internet-Draft        Registry Reporting Repository            July 2018
 
@@ -193,18 +192,18 @@ Internet-Draft        Registry Reporting Repository            July 2018
               Requirement Levels", BCP 14, RFC 2119, March 1997,
               <https://www.rfc-editor.org/info/rfc2119>.
 
-McPherson & Sattler     Expires January 22, 2019                [Page 5]
+McPherson & Sattler     Expires January 24, 2019                [Page 5]
 
 Internet-Draft        Registry Reporting Repository            July 2018
 
 10.2.  Informative References
 
    [I-D.sattler-epp-registry-maintenance]
-              Sattler, T., "Registry Maintenance Notifications for the
-              Extensible Provisioning Protocol (EPP)",
-              <https://tools.ietf.org/html/draft-sattler-epp-registry-
-              maintenance>
-              (work in progress), July 2018
+              Sattler, T., Roger, C. and Kolker, J., "Registry
+              Maintenance Notifications for the Extensible Provisioning
+              Protocol (EPP)", <https://tools.ietf.org/html/draft-
+              sattler-epp-registry-maintenance> (work in progress), July
+              2018
 
    [RFC3339]  Klyne, G., Ed. and C. Newman, "Date and Time on the
               Internet: Timestamps", RFC 3339, July 2002,
@@ -244,4 +243,4 @@ Authors' Addresses
    Email: tobias.sattler@me.com
    URI:   https://tobiassattler.com
 
-McPherson & Sattler     Expires January 22, 2019                [Page 6]
+McPherson & Sattler     Expires January 24, 2019                [Page 6]

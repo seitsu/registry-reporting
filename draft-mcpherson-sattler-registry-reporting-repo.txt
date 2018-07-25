@@ -1,5 +1,5 @@
 Internet Engineering Task Force                             N. McPherson
-Internet-Draft                                              1&1 Internet
+Internet-Draft                                           1&1 Internet SE
 Intended status: Best Current Practice                        T. Sattler
 Expires: January 24, 2019                                  July 25, 2018
 

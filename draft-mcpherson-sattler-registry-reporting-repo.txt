@@ -1,10 +1,10 @@
 Internet Engineering Task Force                             N. McPherson
 Internet-Draft                                           1&1 Internet SE
 Intended status: Best Current Practice                        T. Sattler
-Expires: January 24, 2019                                  July 25, 2018
+Expires: February 5, 2019                                 August 6, 2018
 
                        Registry Reporting Repository
-            draft-mcpherson-sattler-registry-reporting-repo-00
+            draft-mcpherson-sattler-registry-reporting-repo-01
 
 Abstract
 
@@ -26,7 +26,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress".
 
-   This Internet-Draft will expire on January 24, 2019.
+   This Internet-Draft will expire on February 5, 2019.
 
 Copyright Notice
 
@@ -43,13 +43,15 @@ Copyright Notice
    the Trust Legal Provisions and are provided without warranty as
    described in the Simplified BSD License.
 
-McPherson & Sattler     Expires January 24, 2019                [Page 1]
+McPherson & Sattler     Expires February 5, 2019                [Page 1]
 
-Internet-Draft        Registry Reporting Repository            July 2018
+Internet-Draft        Registry Reporting Repository          August 2018
 
 Table of Contents
    1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   3
    2.  Terminology and Definitions . . . . . . . . . . . . . . . . .   3
+     2.1.  Internationalized Domain Names  . . . . . . . . . . . . .   3
+     2.2.  Dates and Times . . . . . . . . . . . . . . . . . . . . .   3
    3.  SFTP Server . . . . . . . . . . . . . . . . . . . . . . . . .   3
    4.  SFTP Account  . . . . . . . . . . . . . . . . . . . . . . . .   3
    5.  SFTP Directory Structure . . . .. . . . . . . . . . . . . . .   4
@@ -61,12 +63,13 @@ Table of Contents
      10.1.  Normative References . . . . . . . . . . . . . . . . . .   5
      10.2.  Informative References . . . . . . . . . . . . . . . . .   6
    Appendix A.  Change History . . . . . . . . . . . . . . . . . . .   6
+     A.1.  Change from 00 to 01  . . . . . . . . . . . . . . . . . .   6
    Appendix B.  Acknowledgements . . . . . . . . . . . . . . . . . .   6
    Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   6
 
-McPherson & Sattler     Expires January 24, 2019                [Page 2]
+McPherson & Sattler     Expires February 5, 2019                [Page 2]
 
-Internet-Draft        Registry Reporting Repository            July 2018
+Internet-Draft        Registry Reporting Repository          August 2018
 
 1.  Introduction
 
@@ -90,6 +93,19 @@ Internet-Draft        Registry Reporting Repository            July 2018
    "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this
    document are to be interpreted as described in [RFC2119] when
    specified in their uppercase forms.
+   
+2.1.  Internationalized Domain Names
+
+   Top-Level Domains and Domain names contained in a directory or file
+   name MUST be written as A-LABEL according to [RFC5890].
+
+2.2.  Dates and Times
+
+   All dates and times attribute values MUST be expressed in Universal
+   Coordinated Time (UTC) using the Gregorian calendar. The extended
+   date-time form using upper case "T" and "Z" characters defined in ISO
+   8601 [RFC3339] MUST be used to represent date-time values. The time
+   zone UTC+0 serves as the basis for a day.
 
 3.  SFTP Server
 
@@ -110,9 +126,9 @@ Internet-Draft        Registry Reporting Repository            July 2018
    The authentication for a SFTP account should be done with an
    username and key instead of a password.
 
-McPherson & Sattler     Expires January 24, 2019                [Page 3]
+McPherson & Sattler     Expires February 5, 2019                [Page 3]
 
-Internet-Draft        Registry Reporting Repository            July 2018
+Internet-Draft        Registry Reporting Repository          August 2018
 
 5.  SFTP Directory Structure
 
@@ -153,9 +169,9 @@ Internet-Draft        Registry Reporting Repository            July 2018
    security considerations described in these other specifications apply
    to this specification as well.
 
-McPherson & Sattler     Expires January 24, 2019                [Page 4]
+McPherson & Sattler     Expires February 5, 2019                [Page 4]
 
-Internet-Draft        Registry Reporting Repository            July 2018
+Internet-Draft        Registry Reporting Repository          August 2018
 
 9.  Implementation Status
 
@@ -192,9 +208,14 @@ Internet-Draft        Registry Reporting Repository            July 2018
               Requirement Levels", BCP 14, RFC 2119, March 1997,
               <https://www.rfc-editor.org/info/rfc2119>.
 
-McPherson & Sattler     Expires January 24, 2019                [Page 5]
+   [RFC5890]  Klensin, J., "Internationalized Domain Names for
+              Applications (IDNA): Definitions and Document Framework",
+              RFC 5890, August 2010,
+              <https://www.rfc-editor.org/info/rfc5890>.
+
+McPherson & Sattler     Expires February 5, 2019                [Page 5]
 
-Internet-Draft        Registry Reporting Repository            July 2018
+Internet-Draft        Registry Reporting Repository          August 2018
 
 10.2.  Informative References
 
@@ -216,7 +237,10 @@ Internet-Draft        Registry Reporting Repository            July 2018
 
 Appendix A.  Change History
 
-   TBD
+A.1.  Change from 00 to 01
+
+   Added reference to IDN A-LABEL. Added clarification on date
+   delimitation.
 
 Appendix B.  Acknowledgements
 
@@ -243,4 +267,4 @@ Authors' Addresses
    Email: tobias.sattler@me.com
    URI:   https://tobiassattler.com
 
-McPherson & Sattler     Expires January 24, 2019                [Page 6]
+McPherson & Sattler     Expires February 5, 2019                [Page 6]

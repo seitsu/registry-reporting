@@ -53,11 +53,11 @@ Table of Contents
      2.1.  Internationalized Domain Names  . . . . . . . . . . . . .   3
      2.2.  Dates and Times . . . . . . . . . . . . . . . . . . . . .   3
    3.  SFTP Server . . . . . . . . . . . . . . . . . . . . . . . . .   3
-   4.  SFTP Account  . . . . . . . . . . . . . . . . . . . . . . . .   3
+   4.  SFTP Account  . . . . . . . . . . . . . . . . . . . . . . . .   4
    5.  SFTP Directory Structure . . . .. . . . . . . . . . . . . . .   4
    6.  SFTP Server Maintenance   . . . . . . . . . . . . . . . . . .   4
    7.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   4
-   8.  Security Considerations . . . . . . . . . . . . . . . . . . .   4
+   8.  Security Considerations . . . . . . . . . . . . . . . . . . .   5
    9.  Implementation Status . . . . . . . . . . . . . . . . . . . .   5
    10. References  . . . . . . . . . . . . . . . . . . . . . . . . .   5
      10.1.  Normative References . . . . . . . . . . . . . . . . . .   5
@@ -104,8 +104,10 @@ Internet-Draft        Registry Reporting Repository          August 2018
    All dates and times attribute values MUST be expressed in Universal
    Coordinated Time (UTC) using the Gregorian calendar. The extended
    date-time form using upper case "T" and "Z" characters defined in ISO
-   8601 [RFC3339] MUST be used to represent date-time values. The time
-   zone UTC+0 serves as the basis for a day.
+   8601 [RFC3339] MUST be used to represent date-time values.
+   
+   One day is defined as one day in UTC+0. Therefore, months and years
+   will also be calculated on this basis.
 
 3.  SFTP Server
 
@@ -116,6 +118,10 @@ Internet-Draft        Registry Reporting Repository          August 2018
    
    IP whitelisting to reach this SFTP server is RECOMMENDED.
 
+McPherson & Sattler     Expires February 5, 2019                [Page 3]
+
+Internet-Draft        Registry Reporting Repository          August 2018
+
 4.  SFTP Account
 
    Each domain name registry MUST create one SFTP account for every
@@ -125,10 +131,6 @@ Internet-Draft        Registry Reporting Repository          August 2018
 
    The authentication for a SFTP account should be done with an
    username and key instead of a password.
-
-McPherson & Sattler     Expires February 5, 2019                [Page 3]
-
-Internet-Draft        Registry Reporting Repository          August 2018
 
 5.  SFTP Directory Structure
 
@@ -162,16 +164,16 @@ Internet-Draft        Registry Reporting Repository          August 2018
 
    This document has no IANA actions.
 
+McPherson & Sattler     Expires February 5, 2019                [Page 4]
+
+Internet-Draft        Registry Reporting Repository          August 2018
+
 8.  Security Considerations
 
    The registry reporting repository described in this document do not
    provide any security services beyond those described by SFTP. The
    security considerations described in these other specifications apply
    to this specification as well.
-
-McPherson & Sattler     Expires February 5, 2019                [Page 4]
-
-Internet-Draft        Registry Reporting Repository          August 2018
 
 9.  Implementation Status
 

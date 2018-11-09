@@ -1,10 +1,10 @@
 Internet Engineering Task Force                             N. McPherson
 Internet-Draft                                              1&1 IONOS SE
 Intended status: Best Current Practice                        T. Sattler
-Expires: May 4, 2019                                    November 5, 2018
+Expires: May 11, 2019                                  November 12, 2018
 
                        Registry Reporting Repository
-            draft-mcpherson-sattler-registry-reporting-repo-02
+            draft-mcpherson-sattler-registry-reporting-repo-03
 
 Abstract
 
@@ -26,7 +26,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress".
 
-   This Internet-Draft will expire on May 4, 2019.
+   This Internet-Draft will expire on May 11, 2019.
 
 Copyright Notice
 
@@ -43,7 +43,7 @@ Copyright Notice
    the Trust Legal Provisions and are provided without warranty as
    described in the Simplified BSD License.
 
-McPherson & Sattler        Expires May 4, 2019                  [Page 1]
+McPherson & Sattler        Expires May 11, 2019                 [Page 1]
 
 Internet-Draft        Registry Reporting Repository        November 2018
 
@@ -59,17 +59,18 @@ Table of Contents
    7.  SFTP Server Maintenance . . . . . . . . . . . . . . . . . . .   4
    8.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   4
    9.  Security Considerations . . . . . . . . . . . . . . . . . . .   5
-   10.  Implementation Status  . . . . . . . . . . . . . . . . . . .   5
+   10. Implementation Status . . . . . . . . . . . . . . . . . . . .   5
    11. References  . . . . . . . . . . . . . . . . . . . . . . . . .   5
      11.1.  Normative References . . . . . . . . . . . . . . . . . .   5
      11.2.  Informative References . . . . . . . . . . . . . . . . .   6
    Appendix A.  Change History . . . . . . . . . . . . . . . . . . .   6
      A.1.  Change from 00 to 01  . . . . . . . . . . . . . . . . . .   6
      A.2.  Change from 01 to 02  . . . . . . . . . . . . . . . . . .   6
-   Appendix B.  Acknowledgements . . . . . . . . . . . . . . . . . .   6
-   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   6
+     A.3.  Change from 02 to 03  . . . . . . . . . . . . . . . . . .   6
+   Appendix B.  Acknowledgements . . . . . . . . . . . . . . . . . .   7
+   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   7
 
-McPherson & Sattler        Expires May 4, 2019                  [Page 2]
+McPherson & Sattler        Expires May 11, 2019                 [Page 2]
 
 Internet-Draft        Registry Reporting Repository        November 2018
 
@@ -120,7 +121,7 @@ Internet-Draft        Registry Reporting Repository        November 2018
    
    IP whitelisting to reach this SFTP server is RECOMMENDED.
 
-McPherson & Sattler        Expires May 4, 2019                  [Page 3]
+McPherson & Sattler        Expires May 11, 2019                 [Page 3]
 
 Internet-Draft        Registry Reporting Repository        November 2018
 
@@ -177,7 +178,7 @@ Internet-Draft        Registry Reporting Repository        November 2018
 
    This document has no IANA actions.
 
-McPherson & Sattler        Expires May 4, 2019                  [Page 4]
+McPherson & Sattler        Expires May 11, 2019                 [Page 4]
 
 Internet-Draft        Registry Reporting Repository        November 2018
 
@@ -228,7 +229,7 @@ Internet-Draft        Registry Reporting Repository        November 2018
               RFC 5890, August 2010,
               <https://www.rfc-editor.org/info/rfc5890>.
 
-McPherson & Sattler        Expires May 4, 2019                  [Page 5]
+McPherson & Sattler        Expires May 11, 2019                 [Page 5]
 
 Internet-Draft        Registry Reporting Repository        November 2018
 
@@ -260,6 +261,14 @@ A.1.  Change from 00 to 01
 A.2.  Change from 01 to 02
 
    Updated Neal's author details.
+   
+A.3.  Change from 02 to 03
+
+   Fixed formatting of the table of contents.
+   
+McPherson & Sattler        Expires May 11, 2019                 [Page 6]
+
+Internet-Draft        Registry Reporting Repository        November 2018
 
 Appendix B.  Acknowledgements
 
@@ -286,4 +295,4 @@ Authors' Addresses
    Email: tobias.sattler@me.com
    URI:   https://tobiassattler.com
 
-McPherson & Sattler        Expires May 4, 2019                  [Page 6]
+McPherson & Sattler        Expires May 11, 2019                 [Page 7]

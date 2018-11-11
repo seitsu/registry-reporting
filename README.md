@@ -1,7 +1,7 @@
-## Registry Reporting Repository
+## Registry Maintenance Notifications for the Extensible Provisioning Protocol (EPP)
 
 ### Goal
-The goal is to draft a new standard on a Registry Reporting Repository and to submit an IETF best practice draft that hopefully result in a [RFC].
+The goal is to draft a new EPP extension for Registry Maintenance Notifications and to submit an IETF Internet-Draft that hopefully result in [RFC].
 
 ### The Current Status
 This idea was raised in the ICANN Registrar Stakeholder Group ([RrSG]) Technical and Operational ([TechOps]) Subcommittee, and further discussed in the [CPH TechOps] Group.
@@ -17,4 +17,4 @@ This is free and unencumbered software released into the public domain. For more
 [TechOps]: http://icannregistrars.org/techops-sub-committee/
 [CPH TechOps]: https://bestpractice.domains
 [LICENSE]: /LICENSE
-[draft]: /draft-mcpherson-sattler-registry-reporting-repo.txt
+[draft]: /draft-sattler-epp-registry-maintenance.txt

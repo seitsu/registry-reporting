@@ -101,7 +101,7 @@ Internet-Draft        Registry Reporting Repository        November 2018
    
 2.1.  Internationalized Domain Names
 
-   Top-Level Domains and Domain names contained in a directory or file
+   Top-level domains and domain names contained in a directory or file
    name MUST be written as A-LABEL according to [RFC5890].
 
 2.2.  Dates and Times
@@ -172,7 +172,7 @@ Internet-Draft        Registry Reporting Repository        November 2018
 
    Maintenance is important and necessary, especially to keep the SFTP
    server up to date and secure. It MUST be announced in advance. In
-   this case the EPP Registry Maintenance Specification
+   this case the EPP registry maintenance specification
    [I-D.sattler-epp-registry-maintenance] is RECOMMENDED to use. The
    notification notice MUST be send at least 7 days in advance.
 
@@ -273,6 +273,8 @@ A.4.  Change from 03 to 04
    Added editor flag to author.
    
 A.4.  Change from 04 to 05
+
+   Minor formatting changes.
    
 McPherson & Sattler        Expires May 29, 2019                 [Page 6]
 
@@ -283,9 +285,9 @@ Appendix B.  Acknowledgements
    The authors wish to thank the following persons for their feedback
    and suggestions (sorted alphabetically by company):
 
-   * Thomas Keller, 1&1 IONOS
-   * James Galvin, Afilias
-   * Andreas Huber, united-domains
+   o Thomas Keller, 1&1 IONOS
+   o James Galvin, Afilias
+   o Andreas Huber, united-domains
 
 Authors' Addresses
 

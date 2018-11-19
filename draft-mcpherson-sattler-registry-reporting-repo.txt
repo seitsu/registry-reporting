@@ -48,33 +48,29 @@ McPherson & Sattler        Expires May 29, 2019                 [Page 1]
 Internet-Draft        Registry Reporting Repository        November 2018
 
 Table of Contents
-   1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   3
-   2.  Terminology and Definitions . . . . . . . . . . . . . . . . .   3
+   1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   2
+   2.  Terminology and Definitions . . . . . . . . . . . . . . . . .   2
      2.1.  Internationalized Domain Names  . . . . . . . . . . . . .   3
      2.2.  Dates and Times . . . . . . . . . . . . . . . . . . . . .   3
    3.  SFTP Server . . . . . . . . . . . . . . . . . . . . . . . . .   3
-   4.  SFTP Account  . . . . . . . . . . . . . . . . . . . . . . . .   4
-   5.  SFTP Directory Structure  . . . . . . . . . . . . . . . . . .   4
+   4.  SFTP Account  . . . . . . . . . . . . . . . . . . . . . . . .   3
+   5.  SFTP Directory Structure  . . . . . . . . . . . . . . . . . .   3
    6.  SFTP Checksum . . . . . . . . . . . . . . . . . . . . . . . .   4 
    7.  SFTP Server Maintenance . . . . . . . . . . . . . . . . . . .   4
    8.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   4
-   9.  Security Considerations . . . . . . . . . . . . . . . . . . .   5
-   10. Implementation Status . . . . . . . . . . . . . . . . . . . .   5
+   9.  Security Considerations . . . . . . . . . . . . . . . . . . .   4
+   10. Implementation Status . . . . . . . . . . . . . . . . . . . .   4
    11. References  . . . . . . . . . . . . . . . . . . . . . . . . .   5
      11.1.  Normative References . . . . . . . . . . . . . . . . . .   5
-     11.2.  Informative References . . . . . . . . . . . . . . . . .   6
-   Appendix A.  Change History . . . . . . . . . . . . . . . . . . .   6
-     A.1.  Change from 00 to 01  . . . . . . . . . . . . . . . . . .   6
-     A.2.  Change from 01 to 02  . . . . . . . . . . . . . . . . . .   6
-     A.3.  Change from 02 to 03  . . . . . . . . . . . . . . . . . .   6
+     11.2.  Informative References . . . . . . . . . . . . . . . . .   5
+   Appendix A.  Change History . . . . . . . . . . . . . . . . . . .   5
+     A.1.  Change from 00 to 01  . . . . . . . . . . . . . . . . . .   5
+     A.2.  Change from 01 to 02  . . . . . . . . . . . . . . . . . .   5
+     A.3.  Change from 02 to 03  . . . . . . . . . . . . . . . . . .   5
      A.4.  Change from 03 to 04  . . . . . . . . . . . . . . . . . .   6
      A.5.  Change from 04 to 05  . . . . . . . . . . . . . . . . . .   6
-   Appendix B.  Acknowledgements . . . . . . . . . . . . . . . . . .   7
-   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   7
-
-McPherson & Sattler        Expires May 29, 2019                 [Page 2]
-
-Internet-Draft        Registry Reporting Repository        November 2018
+   Appendix B.  Acknowledgements . . . . . . . . . . . . . . . . . .   6
+   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   6
 
 1.  Introduction
 
@@ -98,6 +94,10 @@ Internet-Draft        Registry Reporting Repository        November 2018
    "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this
    document are to be interpreted as described in [RFC2119] when
    specified in their uppercase forms.
+   
+McPherson & Sattler        Expires May 29, 2019                 [Page 2]
+
+Internet-Draft        Registry Reporting Repository        November 2018
    
 2.1.  Internationalized Domain Names
 
@@ -123,10 +123,6 @@ Internet-Draft        Registry Reporting Repository        November 2018
    
    IP whitelisting to reach this SFTP server is RECOMMENDED.
 
-McPherson & Sattler        Expires May 29, 2019                 [Page 3]
-
-Internet-Draft        Registry Reporting Repository        November 2018
-
 4.  SFTP Account
 
    Each domain name registry MUST create one SFTP account for every
@@ -136,6 +132,10 @@ Internet-Draft        Registry Reporting Repository        November 2018
 
    The authentication for a SFTP account should be done with an
    username and key instead of a password.
+   
+   To avoid security risks, it is strongly RECOMMENDED to limit SFTP
+   accounts to SFTP only and to exclude them from SSH functions, such as
+   port forwarding, tunneling, SSH login or command execution.
 
 5.  SFTP Directory Structure
 
@@ -150,6 +150,10 @@ Internet-Draft        Registry Reporting Repository        November 2018
    /YYYY-MM/example.csv
    /YYYY-MM/domains/example.csv
    /YYYY-MM/foo/bar/example.csv
+   
+McPherson & Sattler        Expires May 29, 2019                 [Page 3]
+
+Internet-Draft        Registry Reporting Repository        November 2018
 
    YYYY  represents the year in which the file was created, format
          according to ISO 8601 [RFC3339]
@@ -180,10 +184,6 @@ Internet-Draft        Registry Reporting Repository        November 2018
 
    This document has no IANA actions.
 
-McPherson & Sattler        Expires May 29, 2019                 [Page 4]
-
-Internet-Draft        Registry Reporting Repository        November 2018
-
 9.  Security Considerations
 
    The registry reporting repository described in this document do not
@@ -208,6 +208,10 @@ Internet-Draft        Registry Reporting Repository        November 2018
    be construed to be, a catalog of available implementations or their
    features.  Readers are advised to note that other implementations may
    exist.
+   
+McPherson & Sattler        Expires May 29, 2019                 [Page 4]
+
+Internet-Draft        Registry Reporting Repository        November 2018
 
    According to [RFC7942], "this will allow reviewers and working groups
    to assign due consideration to documents that have the benefit of
@@ -230,10 +234,6 @@ Internet-Draft        Registry Reporting Repository        November 2018
               Applications (IDNA): Definitions and Document Framework",
               RFC 5890, August 2010,
               <https://www.rfc-editor.org/info/rfc5890>.
-
-McPherson & Sattler        Expires May 29, 2019                 [Page 5]
-
-Internet-Draft        Registry Reporting Repository        November 2018
 
 11.2.  Informative References
 
@@ -268,23 +268,24 @@ A.3.  Change from 02 to 03
 
    Fixed formatting of the table of contents.
    
+McPherson & Sattler        Expires May 29, 2019                 [Page 5]
+
+Internet-Draft        Registry Reporting Repository        November 2018
+   
 A.4.  Change from 03 to 04
 
    Added editor flag to author.
    
 A.4.  Change from 04 to 05
 
-   Minor formatting changes.
+   Minor formatting changes. Added security advice to SFTP.
    
-McPherson & Sattler        Expires May 29, 2019                 [Page 6]
-
-Internet-Draft        Registry Reporting Repository        November 2018
-
 Appendix B.  Acknowledgements
 
    The authors wish to thank the following persons for their feedback
    and suggestions (sorted alphabetically by company):
 
+   o Anders Henke, 1&1 IONOS
    o Thomas Keller, 1&1 IONOS
    o James Galvin, Afilias
    o Andreas Huber, united-domains
@@ -305,5 +306,5 @@ Authors' Addresses
    Email: tobias.sattler@me.com
    URI:   https://tobiassattler.com
 
-McPherson & Sattler        Expires May 29, 2019                 [Page 7]
+McPherson & Sattler        Expires May 29, 2019                 [Page 6]
 

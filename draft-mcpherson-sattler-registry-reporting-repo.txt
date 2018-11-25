@@ -1,10 +1,10 @@
 Internet Engineering Task Force                             N. McPherson
 Internet-Draft                                              1&1 IONOS SE
 Intended status: Best Current Practice                T. Sattler, Editor
-Expires: May 19, 2019                                  November 20, 2018
+Expires: May 25, 2019                                  November 26, 2018
 
                        Registry Reporting Repository
-            draft-mcpherson-sattler-registry-reporting-repo-05
+            draft-mcpherson-sattler-registry-reporting-repo-06
 
 Abstract
 
@@ -26,7 +26,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress".
 
-   This Internet-Draft will expire on May 19, 2019.
+   This Internet-Draft will expire on May 25, 2019.
 
 Copyright Notice
 
@@ -43,7 +43,7 @@ Copyright Notice
    the Trust Legal Provisions and are provided without warranty as
    described in the Simplified BSD License.
 
-McPherson & Sattler        Expires May 19, 2019                 [Page 1]
+McPherson & Sattler        Expires May 25, 2019                 [Page 1]
 
 Internet-Draft        Registry Reporting Repository        November 2018
 
@@ -69,6 +69,7 @@ Table of Contents
      A.3.  Change from 02 to 03  . . . . . . . . . . . . . . . . . .   5
      A.4.  Change from 03 to 04  . . . . . . . . . . . . . . . . . .   6
      A.5.  Change from 04 to 05  . . . . . . . . . . . . . . . . . .   6
+     A.6.  Change from 05 to 06  . . . . . . . . . . . . . . . . . .   6
    Appendix B.  Acknowledgements . . . . . . . . . . . . . . . . . .   6
    Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   6
 
@@ -95,7 +96,7 @@ Table of Contents
    document are to be interpreted as described in [RFC2119] when
    specified in their uppercase forms.
    
-McPherson & Sattler        Expires May 19, 2019                 [Page 2]
+McPherson & Sattler        Expires May 25, 2019                 [Page 2]
 
 Internet-Draft        Registry Reporting Repository        November 2018
    
@@ -147,11 +148,11 @@ Internet-Draft        Registry Reporting Repository        November 2018
    Files in these directories MUST be stored in an appropriate
    subdirectory according to their creation date.
 
-   /YYYY-MM/example.csv
-   /YYYY-MM/domains/example.csv
-   /YYYY-MM/foo/bar/example.csv
+   /YYYY-MM/example.csv.gz
+   /YYYY-MM/domains/example.csv.gz
+   /YYYY-MM/foo/bar/example.csv.gz
    
-McPherson & Sattler        Expires May 19, 2019                 [Page 3]
+McPherson & Sattler        Expires May 25, 2019                 [Page 3]
 
 Internet-Draft        Registry Reporting Repository        November 2018
 
@@ -169,8 +170,8 @@ Internet-Draft        Registry Reporting Repository        November 2018
    The file name with the checksum MUST be the same as the file name
    with the content extended with the suffix .sha256.
 
-   File with content:   example.csv
-   File with sha256sum: example.csv.sha256
+   File with content:   example.csv.gz
+   File with sha256sum: example.csv.gz.sha256
 
 7.  SFTP Server Maintenance
 
@@ -209,7 +210,7 @@ Internet-Draft        Registry Reporting Repository        November 2018
    features.  Readers are advised to note that other implementations may
    exist.
    
-McPherson & Sattler        Expires May 19, 2019                 [Page 4]
+McPherson & Sattler        Expires May 25, 2019                 [Page 4]
 
 Internet-Draft        Registry Reporting Repository        November 2018
 
@@ -268,7 +269,7 @@ A.3.  Change from 02 to 03
 
    Fixed formatting of the table of contents.
    
-McPherson & Sattler        Expires May 19, 2019                 [Page 5]
+McPherson & Sattler        Expires May 25, 2019                 [Page 5]
 
 Internet-Draft        Registry Reporting Repository        November 2018
    
@@ -279,6 +280,10 @@ A.4.  Change from 03 to 04
 A.4.  Change from 04 to 05
 
    Minor formatting changes. Added security advice to SFTP.
+   
+A.5.  Change from 05 to 06
+
+   Changed examples to reflect compressed files.
    
 Appendix B.  Acknowledgements
 
@@ -306,5 +311,5 @@ Authors' Addresses
    Email: tobias.sattler@me.com
    URI:   https://tobiassattler.com
 
-McPherson & Sattler        Expires May 19, 2019                 [Page 6]
+McPherson & Sattler        Expires May 25, 2019                 [Page 6]
 

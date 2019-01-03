@@ -3,7 +3,7 @@ Internet-Draft                                              1&1 IONOS SE
 Intended status: Best Current Practice                T. Sattler, Editor
 Expires: July 30, 2019                                  January 31, 2019
 
-                            Reporting Repository
+                           Reporting Repository
             draft-mcpherson-sattler-reporting-repository-00
 
 Abstract

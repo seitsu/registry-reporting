@@ -1,7 +1,7 @@
-## Registry Reporting Repository
+## Reporting Repository
 
 ### Goal
-The goal is to draft a new standard on a Registry Reporting Repository and to submit an IETF best practice draft that hopefully result in a [RFC].
+The goal is to draft a Reporting Repository and to submit an IETF best practice draft that hopefully result in a [RFC].
 
 ### The Current Status
 This idea was raised in the ICANN Registrar Stakeholder Group ([RrSG]) Technical and Operational ([TechOps]) Subcommittee, and further discussed in the [CPH TechOps] Group.

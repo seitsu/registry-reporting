@@ -1,15 +1,15 @@
 Internet Engineering Task Force                             N. McPherson
 Internet-Draft                                              1&1 IONOS SE
 Intended status: Best Current Practice                T. Sattler, Editor
-Expires: May 24, 2019                                  November 25, 2018
+Expires: July 30, 2019                                  January 31, 2019
 
-                       Registry Reporting Repository
-            draft-mcpherson-sattler-registry-reporting-repo-06
+                            Reporting Repository
+            draft-mcpherson-sattler-reporting-repository-00
 
 Abstract
 
-   This document describes a domain name registry reporting repository
-   used to provide reports to accredited domain name registrars.
+   This document describes a Reporting Repository used to provide
+   standardized Reports.
 
 Status of This Memo
 
@@ -26,11 +26,11 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress".
 
-   This Internet-Draft will expire on May 24, 2019.
+   This Internet-Draft will expire on July 30, 2019.
 
 Copyright Notice
 
-   Copyright (c) 2018 IETF Trust and the persons identified as the
+   Copyright (c) 2019 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -43,9 +43,9 @@ Copyright Notice
    the Trust Legal Provisions and are provided without warranty as
    described in the Simplified BSD License.
 
-McPherson & Sattler        Expires May 24, 2019                 [Page 1]
+McPherson & Sattler       Expires July 30, 2019                 [Page 1]
 
-Internet-Draft        Registry Reporting Repository        November 2018
+Internet-Draft             Reporting Repository             January 2019
 
 Table of Contents
    1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   2
@@ -70,6 +70,7 @@ Table of Contents
      A.4.  Change from 03 to 04  . . . . . . . . . . . . . . . . . .   6
      A.5.  Change from 04 to 05  . . . . . . . . . . . . . . . . . .   6
      A.6.  Change from 05 to 06  . . . . . . . . . . . . . . . . . .   6
+     A.7.  Change from 06 to REPO 00 . . . . . . . . . . . . . . . .   6
    Appendix B.  Acknowledgements . . . . . . . . . . . . . . . . . .   6
    Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   6
 
@@ -79,15 +80,15 @@ Table of Contents
    reports and documents that their registrars require on a daily,
    weekly and monthly basis. These most commonly include transaction
    reports, as well as lists containing currently unavailable domains
-   and current premium domains. These reports are critical for
+   and current premium domain fees. These reports are critical for
    registrars' businesses and play an important role in accounting and
    operations processes as well as in sales and marketing activities.
    In the current set-up registrars must download these reports from
    each registry's intranet in a different manner according to each
    registry's own document management set up.
 
-   This document describes a domain registry reporting repository used
-   to provide reports to accredited domain registrars.
+   This document describes a Reporting Repository used to provide
+   standardized Reports.
 
 2.  Terminology and Definitions
 
@@ -96,9 +97,9 @@ Table of Contents
    document are to be interpreted as described in [RFC2119] when
    specified in their uppercase forms.
    
-McPherson & Sattler        Expires May 24, 2019                 [Page 2]
+McPherson & Sattler       Expires July 30, 2019                 [Page 2]
 
-Internet-Draft        Registry Reporting Repository        November 2018
+Internet-Draft             Reporting Repository             January 2019
    
 2.1.  Internationalized Domain Names
 
@@ -152,9 +153,9 @@ Internet-Draft        Registry Reporting Repository        November 2018
    /YYYY-MM/domains/example.csv.gz
    /YYYY-MM/foo/bar/example.csv.gz
    
-McPherson & Sattler        Expires May 24, 2019                 [Page 3]
+McPherson & Sattler       Expires July 30, 2019                 [Page 3]
 
-Internet-Draft        Registry Reporting Repository        November 2018
+Internet-Draft             Reporting Repository             January 2019
 
    YYYY  represents the year in which the file was created, format
          according to ISO 8601 [RFC3339]
@@ -210,9 +211,9 @@ Internet-Draft        Registry Reporting Repository        November 2018
    features.  Readers are advised to note that other implementations may
    exist.
    
-McPherson & Sattler        Expires May 24, 2019                 [Page 4]
+McPherson & Sattler       Expires July 30, 2019                 [Page 4]
 
-Internet-Draft        Registry Reporting Repository        November 2018
+Internet-Draft             Reporting Repository             January 2019
 
    According to [RFC7942], "this will allow reviewers and working groups
    to assign due consideration to documents that have the benefit of
@@ -269,21 +270,25 @@ A.3.  Change from 02 to 03
 
    Fixed formatting of the table of contents.
    
-McPherson & Sattler        Expires May 24, 2019                 [Page 5]
+McPherson & Sattler       Expires July 30, 2019                 [Page 5]
 
-Internet-Draft        Registry Reporting Repository        November 2018
+Internet-Draft             Reporting Repository             January 2019
    
 A.4.  Change from 03 to 04
 
    Added editor flag to author.
    
-A.4.  Change from 04 to 05
+A.5.  Change from 04 to 05
 
    Minor formatting changes. Added security advice to SFTP.
    
-A.5.  Change from 05 to 06
+A.6.  Change from 05 to 06
 
    Changed examples to reflect compressed files.
+   
+A.7.  Change from 06 to REPO 00
+
+   Changed draft name.
    
 Appendix B.  Acknowledgements
 
@@ -311,5 +316,5 @@ Authors' Addresses
    Email: tobias.sattler@me.com
    URI:   https://tobiassattler.com
 
-McPherson & Sattler        Expires May 24, 2019                 [Page 6]
+McPherson & Sattler       Expires July 30, 2019                 [Page 6]
 

@@ -1,10 +1,10 @@
 Internet Engineering Task Force                             N. McPherson
 Internet-Draft                                              1&1 IONOS SE
 Intended status: Best Current Practice                T. Sattler, Editor
-Expires: July 28, 2019                                  January 29, 2019
+Expires: September 23, 2019                               March 24, 2019
 
                            Reporting Repository
-            draft-mcpherson-sattler-reporting-repository-00
+            draft-mcpherson-sattler-reporting-repository-01
 
 Abstract
 
@@ -26,7 +26,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress".
 
-   This Internet-Draft will expire on July 28, 2019.
+   This Internet-Draft will expire on September 23, 2019.
 
 Copyright Notice
 
@@ -43,9 +43,9 @@ Copyright Notice
    the Trust Legal Provisions and are provided without warranty as
    described in the Simplified BSD License.
 
-McPherson & Sattler       Expires July 28, 2019                 [Page 1]
+McPherson & Sattler       Expires September 23, 2019            [Page 1]
 
-Internet-Draft             Reporting Repository             January 2019
+Internet-Draft               Reporting Repository             March 2019
 
 Table of Contents
    1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   2
@@ -60,32 +60,34 @@ Table of Contents
    8.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   4
    9.  Security Considerations . . . . . . . . . . . . . . . . . . .   4
    10. Implementation Status . . . . . . . . . . . . . . . . . . . .   4
+     10.1.  united-domains Reselling . . . . . . . . . . . . . . . .   5   
    11. References  . . . . . . . . . . . . . . . . . . . . . . . . .   5
      11.1.  Normative References . . . . . . . . . . . . . . . . . .   5
-     11.2.  Informative References . . . . . . . . . . . . . . . . .   5
-   Appendix A.  Change History . . . . . . . . . . . . . . . . . . .   5
-     A.1.  Change from 00 to 01  . . . . . . . . . . . . . . . . . .   5
-     A.2.  Change from 01 to 02  . . . . . . . . . . . . . . . . . .   5
-     A.3.  Change from 02 to 03  . . . . . . . . . . . . . . . . . .   5
+     11.2.  Informative References . . . . . . . . . . . . . . . . .   6
+   Appendix A.  Change History . . . . . . . . . . . . . . . . . . .   6
+     A.1.  Change from 00 to 01  . . . . . . . . . . . . . . . . . .   6
+     A.2.  Change from 01 to 02  . . . . . . . . . . . . . . . . . .   6
+     A.3.  Change from 02 to 03  . . . . . . . . . . . . . . . . . .   6
      A.4.  Change from 03 to 04  . . . . . . . . . . . . . . . . . .   6
      A.5.  Change from 04 to 05  . . . . . . . . . . . . . . . . . .   6
      A.6.  Change from 05 to 06  . . . . . . . . . . . . . . . . . .   6
      A.7.  Change from 06 to REPO 00 . . . . . . . . . . . . . . . .   6
-   Appendix B.  Acknowledgements . . . . . . . . . . . . . . . . . .   6
-   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   6
+     A.8.  Change from REPO 00 to REPO 01  . . . . . . . . . . . . .   6
+   Appendix B.  Acknowledgements . . . . . . . . . . . . . . . . . .   7
+   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   7
 
 1.  Introduction
 
-   Modern top-level domain registries provide a number of detailed
-   reports and documents that their registrars require on a daily,
-   weekly and monthly basis. These most commonly include transaction
-   reports, as well as lists containing currently unavailable domains
-   and current premium domain fees. These reports are critical for
-   registrars' businesses and play an important role in accounting and
-   operations processes as well as in sales and marketing activities.
-   In the current set-up registrars must download these reports from
-   each registry's intranet in a different manner according to each
-   registry's own document management set up.
+   Modern top-level domain registries provide many detailed reports and
+   documents that their registrars require on a daily, weekly and
+   monthly basis. These most commonly include transaction reports, as
+   well as lists containing currently unavailable domains and current
+   premium domain fees. These reports are critical for registrars'
+   businesses and play an important role in accounting and operations
+   processes as well as in sales and marketing activities. In the
+   current set-up, registrars must download these reports from each
+   registry's intranet differently according to each registry's document
+   management set up.
 
    This document describes a Reporting Repository used to provide
    standardized Reports.
@@ -97,9 +99,9 @@ Table of Contents
    document are to be interpreted as described in [RFC2119] when
    specified in their uppercase forms.
    
-McPherson & Sattler       Expires July 28, 2019                 [Page 2]
+McPherson & Sattler       Expires September 23, 2019            [Page 2]
 
-Internet-Draft             Reporting Repository             January 2019
+Internet-Draft               Reporting Repository             March 2019
    
 2.1.  Internationalized Domain Names
 
@@ -118,7 +120,7 @@ Internet-Draft             Reporting Repository             January 2019
 
 3.  SFTP Server
 
-   Each domain name registry sets up and manages a SFTP
+   Each domain name registry sets up and manages an SFTP
    (https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol) server.
    Every SFTP server MUST be reachable through a generic URI, such as
    sftp://registry.example, and MUST listen on port 22.
@@ -132,7 +134,7 @@ Internet-Draft             Reporting Repository             January 2019
    registrar, then a registry SHOULD combine them in one account on
    request by the parent registrar or entity.
 
-   The authentication for a SFTP account should be done with an
+   The authentication for an SFTP account should be done with an
    username and key instead of a password.
    
    To avoid security risks, it is strongly RECOMMENDED to limit SFTP
@@ -141,9 +143,9 @@ Internet-Draft             Reporting Repository             January 2019
 
 5.  SFTP Directory Structure
 
-   The home directory of a SFTP user MUST be its root. This can be
-   achieved with e.g. chroot (https://en.wikipedia.org/wiki/Chroot) and
-   prevents that a SFTP user can access other directories that are not
+   The home directory of an SFTP user MUST be its root. This can be
+   achieved with, e.g. chroot (https://en.wikipedia.org/wiki/Chroot) and
+   prevents that an SFTP user can access other directories that are not
    owned by themselves. All directories MUST be lowercase.
 
    Files in these directories MUST be stored in an appropriate
@@ -153,9 +155,9 @@ Internet-Draft             Reporting Repository             January 2019
    /YYYY-MM/domains/example.csv.gz
    /YYYY-MM/foo/bar/example.csv.gz
    
-McPherson & Sattler       Expires July 28, 2019                 [Page 3]
+McPherson & Sattler       Expires September 23, 2019            [Page 3]
 
-Internet-Draft             Reporting Repository             January 2019
+Internet-Draft               Reporting Repository             March 2019
 
    YYYY  represents the year in which the file was created, format
          according to ISO 8601 [RFC3339]
@@ -176,11 +178,11 @@ Internet-Draft             Reporting Repository             January 2019
 
 7.  SFTP Server Maintenance
 
-   Maintenance is important and necessary, especially to keep the SFTP
+   Maintenance is important and necessary, mainly to keep the SFTP
    server up to date and secure. It MUST be announced in advance. In
    this case the EPP registry maintenance specification
    [I-D.sattler-epp-registry-maintenance] is RECOMMENDED to use. The
-   notification notice MUST be send at least 7 days in advance.
+   notification notice MUST be sent at least 7 days in advance.
 
 8.  IANA Considerations
 
@@ -188,8 +190,8 @@ Internet-Draft             Reporting Repository             January 2019
 
 9.  Security Considerations
 
-   The registry reporting repository described in this document do not
-   provide any security services beyond those described by SFTP. The
+   The registry reporting repository described in this document does not
+   provide any security services beyond those specified by SFTP. The
    security considerations described in these other specifications apply
    to this specification as well.
 
@@ -211,9 +213,9 @@ Internet-Draft             Reporting Repository             January 2019
    features.  Readers are advised to note that other implementations may
    exist.
    
-McPherson & Sattler       Expires July 28, 2019                 [Page 4]
+McPherson & Sattler       Expires September 23, 2019            [Page 4]
 
-Internet-Draft             Reporting Repository             January 2019
+Internet-Draft               Reporting Repository             March 2019
 
    According to [RFC7942], "this will allow reviewers and working groups
    to assign due consideration to documents that have the benefit of
@@ -222,7 +224,26 @@ Internet-Draft             Reporting Repository             January 2019
    is up to the individual working groups to use this information as
    they see fit".
 
-   Add implementation details once available.
+10.1.  united-domains Reselling
+
+   Organization: united-domains Reselling GmbH
+
+   Name: Reseller Reporting System
+
+   Description: Domain Reseller Platform
+
+   Level of maturity: Research implementation in united-domains
+   Reselling environment.
+   
+   Version compatibility: Version REPO 01 is implemented.
+
+   Coverage: All aspects of this document are implemented.
+
+   Licensing: Proprietary In-House software
+
+   Contact: Tim Ettel <ettel@ud-reselling.com>
+
+   URL: https://www.ud-reselling.com/en/
 
 11.  References
 
@@ -236,6 +257,10 @@ Internet-Draft             Reporting Repository             January 2019
               Applications (IDNA): Definitions and Document Framework",
               RFC 5890, August 2010,
               <https://www.rfc-editor.org/info/rfc5890>.
+              
+McPherson & Sattler       Expires September 23, 2019            [Page 5]
+
+Internet-Draft               Reporting Repository             March 2019
 
 11.2.  Informative References
 
@@ -270,10 +295,6 @@ A.3.  Change from 02 to 03
 
    Fixed formatting of the table of contents.
    
-McPherson & Sattler       Expires July 28, 2019                 [Page 5]
-
-Internet-Draft             Reporting Repository             January 2019
-   
 A.4.  Change from 03 to 04
 
    Added editor flag to author.
@@ -290,6 +311,15 @@ A.7.  Change from 06 to REPO 00
 
    Changed draft name.
    
+A.8.  Change from REPO 00 to REPO 01
+
+   Added implementation reference and acknowledgement. Editorial
+   changes.
+   
+McPherson & Sattler       Expires September 23, 2019            [Page 6]
+
+Internet-Draft               Reporting Repository             March 2019
+   
 Appendix B.  Acknowledgements
 
    The authors wish to thank the following persons for their feedback
@@ -298,6 +328,7 @@ Appendix B.  Acknowledgements
    o Anders Henke, 1&1 IONOS
    o Thomas Keller, 1&1 IONOS
    o James Galvin, Afilias
+   o Tim Ettel, united-domains
    o Andreas Huber, united-domains
 
 Authors' Addresses
@@ -316,5 +347,5 @@ Authors' Addresses
    Email: tobias.sattler@me.com
    URI:   https://tobiassattler.com
 
-McPherson & Sattler       Expires July 28, 2019                 [Page 6]
+McPherson & Sattler       Expires September 23, 2019            [Page 7]
 

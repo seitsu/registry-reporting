@@ -1,10 +1,10 @@
 Internet Engineering Task Force                             N. McPherson
 Internet-Draft                                              1&1 IONOS SE
 Intended status: Best Current Practice                T. Sattler, Editor
-Expires: October 14, 2019                                 April 15, 2019
+Expires: April 15, 2020                                 October 15, 2019
 
                            Reporting Repository
-            draft-mcpherson-sattler-reporting-repository-02
+            draft-mcpherson-sattler-reporting-repository-03
 
 Abstract
 
@@ -26,7 +26,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress".
 
-   This Internet-Draft will expire on October 14, 2019.
+   This Internet-Draft will expire on April 15, 2020.
 
 Copyright Notice
 
@@ -43,9 +43,9 @@ Copyright Notice
    the Trust Legal Provisions and are provided without warranty as
    described in the Simplified BSD License.
 
-McPherson & Sattler         Expires October 14, 2019            [Page 1]
+McPherson & Sattler         Expires April 15, 2020              [Page 1]
 
-Internet-Draft               Reporting Repository             April 2019
+Internet-Draft               Reporting Repository           October 2019
 
 Table of Contents
    1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   2
@@ -74,6 +74,7 @@ Table of Contents
      A.7.  Change from 06 to REPO 00 . . . . . . . . . . . . . . . .   6
      A.8.  Change from REPO 00 to REPO 01  . . . . . . . . . . . . .   6
      A.9.  Change from REPO 01 to REPO 02  . . . . . . . . . . . . .   7
+     A.10. Change from REPO 02 to REPO 03  . . . . . . . . . . . . .   7
    Appendix B.  Acknowledgements . . . . . . . . . . . . . . . . . .   7
    Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   7
 
@@ -100,9 +101,9 @@ Table of Contents
    document are to be interpreted as described in [RFC2119] when
    specified in their uppercase forms.
    
-McPherson & Sattler         Expires October 14, 2019            [Page 2]
+McPherson & Sattler         Expires April 15, 2020              [Page 2]
 
-Internet-Draft               Reporting Repository             April 2019
+Internet-Draft               Reporting Repository           October 2019
    
 2.1.  Internationalized Domain Names
 
@@ -156,9 +157,9 @@ Internet-Draft               Reporting Repository             April 2019
    /YYYY-MM/domains/example.csv.gz
    /YYYY-MM/foo/bar/example.csv.gz
    
-McPherson & Sattler         Expires October 14, 2019            [Page 3]
+McPherson & Sattler         Expires April 15, 2020              [Page 3]
 
-Internet-Draft               Reporting Repository             April 2019
+Internet-Draft               Reporting Repository           October 2019
 
    YYYY  represents the year in which the file was created, format
          according to ISO 8601 [RFC3339]
@@ -214,9 +215,9 @@ Internet-Draft               Reporting Repository             April 2019
    features.  Readers are advised to note that other implementations may
    exist.
    
-McPherson & Sattler         Expires October 14, 2019            [Page 4]
+McPherson & Sattler         Expires April 15, 2020              [Page 4]
 
-Internet-Draft               Reporting Repository             April 2019
+Internet-Draft               Reporting Repository           October 2019
 
    According to [RFC7942], "this will allow reviewers and working groups
    to assign due consideration to documents that have the benefit of
@@ -258,9 +259,9 @@ Internet-Draft               Reporting Repository             April 2019
               RFC 5890, August 2010,
               <https://www.rfc-editor.org/info/rfc5890>.
               
-McPherson & Sattler         Expires October 14, 2019            [Page 5]
+McPherson & Sattler         Expires April 15, 2020              [Page 5]
 
-Internet-Draft               Reporting Repository             April 2019
+Internet-Draft               Reporting Repository           October 2019
 
 11.2.  Informative References
 
@@ -316,13 +317,17 @@ A.8.  Change from REPO 00 to REPO 01
    Added implementation reference and acknowledgement. Editorial
    changes.
    
-McPherson & Sattler         Expires October 14, 2019            [Page 6]
+McPherson & Sattler         Expires April 15, 2020              [Page 6]
 
-Internet-Draft               Reporting Repository             April 2019
+Internet-Draft               Reporting Repository           October 2019
    
 A.9.  Change from REPO 01 to REPO 02
 
    Changed implementation reference.
+   
+A.10. Change from REPO 02 to REPO 03
+
+   Editorial changes.
    
 Appendix B.  Acknowledgements
 
@@ -351,5 +356,5 @@ Authors' Addresses
    Email: tobias.sattler@me.com
    URI:   https://tobiassattler.com
 
-McPherson & Sattler         Expires October 14, 2019            [Page 7]
+McPherson & Sattler         Expires April 15, 2020              [Page 7]
 

@@ -2,20 +2,19 @@ Reporting Repository
 =================
 
 ## Goal
-The goal is to draft a Reporting Repository and to submit an IETF best practice draft that hopefully result in a [RFC].
+The goal was to draft a Reporting Repository and submit an IETF best practice draft that hopefully results in an [RFC].
 
-## The Current Status
-This idea was raised in the ICANN Registrar Stakeholder Group ([RrSG]) Technical and Operational ([TechOps]) Subcommittee, and further discussed in the [CPH TechOps] Group.
+## Status
+This idea was raised in the ICANN Registrar Stakeholder Group ([RrSG]) Technical and Operational ([TechOps]) Subcommittee and further discussed in the [CPH TechOps] Group.
+
+This document is **not active** anymore. We abandoned it in favor of [Simple Registration Reporting].
 
 ## Validation of IETF draft
-You may validate this [draft] document with https://tools.ietf.org/tools/idnits/
-
-## License
-This is free and unencumbered software released into the public domain. For more info, please read the [LICENSE] file distributed.
+You may validate this [draft] document with https://tools.ietf.org/tools/idnits/.
 
 [RFC]: https://en.wikipedia.org/wiki/Request_for_Comments
-[RrSG]: http://icannregistrars.org
-[TechOps]: http://icannregistrars.org/techops-sub-committee/
+[RrSG]: https://rrsg.org/
+[TechOps]: https://rrsg.org/working-groups/
 [CPH TechOps]: https://bestpractice.domains
-[LICENSE]: /LICENSE
 [draft]: /draft-mcpherson-sattler-reporting-repository.txt
+[Simple Registration Reporting]: https://datatracker.ietf.org/doc/draft-ietf-regext-simple-registration-reporting/
